@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie List</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.css">
+</head>
+<body>
+    <h1 class = "main-heading text-center" id = 'header-title'>My Movies</h1>
+
+    <form class = "form-inline justify-content-center" id = 'input-form'>Add movie
+        <div class = 'form-input'>
+            <label for="movie">Movie
+            <input type="text" id = 'movie' placeholder="movie title">
+        </div>
+        <div class = 'form-input'>
+            <label for="rating">Rating
+            <input type="text" id = 'rating' placeholder="rating 0 - 10">
+        </div>
+        <div class = 'form-input'>
+            <button type = 'submit' id = "sbmit-btn">Submit</button>
+        </div>
+    </form>
+
+    <br>
+    <hr>
+
+    <table class = 'table table-striped table-hover' id = ''>
+        <thead id="movie-table-header">
+            <tr>
+                <th scope = 'col'>Title
+                    <button class = 'sort' id = "title-sort">sort</button>
+                </th>
+                <th scope = 'col'>Rating
+                    <button class = 'sort' id = "rating-sort">sort</button>
+                </th>
+                <th scope = 'col'>Remove</th>
+            </tr>
+        </thead>
+        <tbody id = 'movie-table-body'>
+            
+        </tbody>
+    </table>
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+crossorigin="anonymous"></script>
+<script src = "movies.js"></script>
+</body>
+</html>
